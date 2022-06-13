@@ -1,22 +1,12 @@
-class Calculator {
+function convertProperCase(str) {
+    if(str.length <= 0){
+        return;
+    }
+    if(str[0] == str[0].toLowerCase()) {
+        return str[0].toUpperCase().concat(str.substring(1))
+    }
+    return str;
+}
 
-    constructor() {
-        this.a = 0;
-        this.b = 0;
-        this.read = function(a, b) {
-            this.a = a;
-            this.b = b;
-        };
-        this.sum = function() {
-            return this.a + this.b;
-        };
-        this.mul = function() {
-            return this.a * this.b;
-        }
-    };
-  }
-  
-const calc = new Calculator();
-calc.read(5,10);
-console.log(calc.sum())
-console.log(calc.mul())
+console.log(convertProperCase("manas"))
+console.log(convertProperCase("Jain"))
