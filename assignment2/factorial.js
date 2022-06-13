@@ -11,3 +11,20 @@ function factorialCalculator(num) {
 }
 
 console.log(factorialCalculator(5)())
+
+
+//Alternate Approach
+function factorialCalculatorAlter(n) {
+
+    let mulNumber = () => {
+        if(n <= 1) {
+            return 1;
+        }
+        n=n-1;
+        return (n+1) * mulNumber();
+    }
+    return mulNumber;
+}
+
+let factCalc = factorialCalculatorAlter(5);
+console.log(factCalc());
