@@ -6,11 +6,13 @@ class MyArray {
     }
 
     push(data) {
+
         this.dataCollection[this.collectionLength] = data;
         this.collectionLength++;
     } 
 
     pop(){
+
         if(this.collectionLength <= 0) {
             throw new Error("Already Empty Array");
         }
@@ -21,10 +23,12 @@ class MyArray {
     }
 
     length(){
+
         return this.collectionLength;
     }
 
     indexOf(data) {
+
         let res = new MyArray();
         for(let i=0; i<this.collectionLength; i++){
             if(this.dataCollection[i] === data){
@@ -35,6 +39,7 @@ class MyArray {
     }
 
     shift() {
+
         if(this.collectionLength <= 0) {
             throw new Error("Already Empty Array");
         }
@@ -48,14 +53,19 @@ class MyArray {
     }
 
     unShift(no) {
-       
-        for(let i = this.collectionLength; i > 0; i++) {
-
+        if(this.collectionLength <= 0) {
+            this.push(no);
+            return this.collectionLength;
+        }
+        for(let i = this.collectionLength; i > 0; i--) {
+            this.dataCollection[i] = this.dataCollection[i-1];
         };
-        ++this.collectionLength;
+        this.dataCollection[0] = no;
+        return ++this.collectionLength;
     }
 
     slice(start, end) {
+        
         if(start > this.collectionLength || start < 0) {
             throw new Error("Invalid Starting Index");
         }
@@ -67,13 +77,32 @@ class MyArray {
     }
 
     forEach(callback) {
+
         for(const prop of dataCollection) {
             callback(dataCollection[prop]);
         }
     }
 }
 
+
 let arr = new MyArray();
 arr.push(1);
 arr.push(2);
+arr.push(2);
+arr.push(3);
+
+console.log("Initial Array", arr)
+console.log("Index of Array", arr.indexOf(2))
+
+console.log("Array POP", arr.pop())
 console.log(arr)
+
+console.log("Array Shift", arr.shift())
+console.log(arr)
+
+console.log("Array Unshift", arr.unShift(1))
+console.log("Array Unshift", arr.unShift(3))
+console.log(arr)
+
+console.log("Array Slice", arr.slice(1,3))
+
