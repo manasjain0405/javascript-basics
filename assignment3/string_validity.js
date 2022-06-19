@@ -18,12 +18,13 @@ function get_callback(x) {
       }else {
           res[x] = false;
       }
-      console.log(res);
   }
 }
 
 
 const input = ['first', 'Second', 'thiRd', 4, false, 'true'];
 input
-.map((x) => validateString.bind(null, x, get_callback(x)))
-.forEach( (x) => x())
+.forEach((x) => validateString(x, get_callback(x)));
+setTimeout(() => {
+  console.log(res)
+}, 500)
