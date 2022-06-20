@@ -1,0 +1,23 @@
+{
+  "name": "javascript-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manasjain0405/javascript-basics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manasjain0405/javascript-basics/issues"
+  },
+  "homepage": "https://github.com/manasjain0405/javascript-basics#readme",
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
