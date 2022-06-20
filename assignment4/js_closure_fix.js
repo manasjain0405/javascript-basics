@@ -15,10 +15,10 @@ Output:
 ....
 
 Reason: Each block execution creates a closure with the parent block,
-hence the same reference of i is attached to all block execution,
+and var declares the variable in global scope hence the same reference of i is attached to all block execution,
 and when the timer expires for setTimeout, the reference is updated to 10;
 
-Solution: Create a new block-scoped variable for each block execution.
+Solution: Create a new block-scoped variable for each block execution using let.
 */
 
 for (let i = 0; i < 10; i++) {
