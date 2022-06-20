@@ -1,25 +1,25 @@
 # Questions
 
-## Write a regex pattern that matches the password
+## Q1 Write a regex pattern that matches the password
 
 - Uppercase (A-Z) and lowercase (a-z) English letters.
 - Digits (0-9).
 - Characters ! # $ % & ' * + - / = ? ^ _ ` { | } ~
 - Character. ( period, dot or full stop) provided that it is not the first or last character and it will not come one after the other.
 
-## Write a regex pattern to match the valid email address
+## Q2 Write a regex pattern to match the valid email address
 
 ### Solution
 
 [Regular Expressions](/assignment3/regular_expression.js)
 
-## Write a regex pattern that verifies credit card pattern
+## Q3 Write a regex pattern that verifies credit card pattern
 
 ### Solution
 
 [Regular Expressions](/assignment3/regular_expression.js)
 
-## Write a regex function to distinguish and pick the values of email address, phone number from the below paragraph
+## Q4 Write a regex function to distinguish and pick the values of email address, phone number from the below paragraph
 
 ### Paragraph
 
@@ -29,13 +29,13 @@ Lorem ipsum dolor 9221122108 sit amet, consectetur adipiscing elit, sed do eiusm
 
 [Regular Expressions](/assignment3/regular_expression.js)
 
-## Implement the setTimeout function using native javascript only
+## Q5 Implement the setTimeout function using native javascript only
 
 ### Solution
 
 [Set Timeout](/assignment3/set_timeout.js)
 
-## Implement a javascript Array having the following prototype functions without using Native javascript array
+## Q6 Implement a javascript Array having the following prototype functions without using Native javascript array
 
 - push
 - pop
@@ -50,7 +50,7 @@ Lorem ipsum dolor 9221122108 sit amet, consectetur adipiscing elit, sed do eiusm
 
 [Array Impl](/assignment3/custom_array.js)
 
-## Provided a function that checks the validity of string and returns results via a callback
+## Q7 Provided a function that checks the validity of string and returns results via a callback
 
 ### Validate String function
 
