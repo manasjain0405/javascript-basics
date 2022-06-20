@@ -1,8 +1,9 @@
-for(var i = 0; i < 10; i++) {
-    setTimeout(function() {
-      console.log(i); 
-    }, 10);
- }
+// eslint-disable-next-line no-var
+for (var i = 0; i < 10; i++) {
+  setTimeout(function() {
+    console.log(i);
+  }, 10);
+}
 
 /*
 Output:
@@ -20,9 +21,8 @@ and when the timer expires for setTimeout, the reference is updated to 10;
 Solution: Create a new block-scoped variable for each block execution.
 */
 
-for(var i = 0; i < 10; i++) {
-    const x = i;
-    setTimeout(function() {
-      console.log(x); 
-    }, 10);
- }
+for (let i = 0; i < 10; i++) {
+  setTimeout(function() {
+    console.log(x);
+  }, 10);
+}
